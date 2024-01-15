@@ -34,6 +34,7 @@
 
 .container__left {
   width: 35%;
+  display: flex;
   min-width: 300px;
   flex-direction: column;
   align-items: center;
@@ -87,9 +88,11 @@
 .card-versus__container {
   display: flex;
   flex-direction: column;
+  justify-items: center;
+  align-items: center;
   padding-top: 0.1rem;
   height: 300px;
-  margin-top: 5rem;
+  padding-top: 50px;
 }
 
 .versus-top, .versus-bottom {
@@ -118,5 +121,29 @@
 .card-infield {
   height: 11.2rem;
   width: 8rem;
+  border: 1px solid #fff;
   border-radius: 8px;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.playerTypeOnTheBattle, .computerTypeOnTheBattle{
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+button {
+  margin-top: 12px;
+}
+
+.debug {
+  border: 1px solid red;
 }
