@@ -204,6 +204,8 @@ async function playBgm() {
 
 function init() {
 
+  playBgm()
+  
   state.cardSprites.avatar.style.opacity = 0
 
   state.fieldCards.player.style.display = "none"
@@ -212,7 +214,6 @@ function init() {
   drawCards(5, state.playerSides.player1)
   drawCards(5, state.playerSides.computer)
 
-  playBgm()
 }
 
 init()
