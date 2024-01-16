@@ -191,7 +191,15 @@ async function playAudio(status) {
   try {
     audio.play()
   } catch {}
+}
 
+async function playBgm() {
+  const bgm = document.getElementById("bgm")
+  bgm.volume = 0.2
+
+  try {
+    bgm.play()
+  } catch {}
 }
 
 function init() {
@@ -203,6 +211,8 @@ function init() {
 
   drawCards(5, state.playerSides.player1)
   drawCards(5, state.playerSides.computer)
+
+  playBgm()
 }
 
 init()
